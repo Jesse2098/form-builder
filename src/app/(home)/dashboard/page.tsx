@@ -1,9 +1,14 @@
+import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import React from 'react'
 
-const page = () => {
+export default function  page() {
   return (
-    <div>page</div>
+    <MaxWidthWrapper className='container pt-4'>
+      page
+    </MaxWidthWrapper>
   )
 }
 
-export default page
+function CardStatsWrapper() {
+  {/*you ended on 19:00 min on the kilnton form builder video*/}
+}
