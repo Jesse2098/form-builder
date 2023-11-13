@@ -1,14 +1,14 @@
-import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import React from 'react'
+import CardStatsWrapper from '@/components/CardStatsWrapper'
+import StatsCards from '@/components/StatsCards'
+import React, { Suspense } from 'react'
 
 export default function  page() {
   return (
-    <MaxWidthWrapper className='container pt-4'>
-      page
-    </MaxWidthWrapper>
+    <div  className='container pt-4'>
+      <Suspense fallback={<StatsCards loading={true}/> }>
+        <CardStatsWrapper/>
+      </Suspense>
+    </div>
   )
 }
 
-function CardStatsWrapper() {
-  {/*you ended on 19:00 min on the kilnton form builder video*/}
-}
