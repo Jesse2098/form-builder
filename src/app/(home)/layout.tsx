@@ -7,7 +7,7 @@ const inter = Inter({subsets: ['latin']})
 
 export default function layout({children} : {children : React.ReactNode}) {
   return (
-    <div className={cn("min-h-screen font-sans antialiased mb-20 grainy", inter.className)}>
+    <div className={cn("min-h-full font-sans antialiased mb-20 grainy", inter.className)}>
       <Navbar/>  
       <main>
         {children}
