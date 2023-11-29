@@ -48,7 +48,7 @@ function CreateFormButton() {
                 description: 'You successfully created a form!',
                 variant: "default"
             })
-            console.log(formId)
+            router.push(`/builder/${formId}`)
         } catch (error) {
             toast({
                 title: 'Error',
